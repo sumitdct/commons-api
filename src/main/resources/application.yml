@@ -1,0 +1,15 @@
+# -- BASIC CONFIGURATION -- #
+spring:
+  application:
+    name: commons-api
+  jmx:
+    default-domain: ${spring.application.name}
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+endpoints:
+  jmx:
+    domain: ${spring.jmx.default-domain}
+server:
+  port: 1993
